@@ -39,9 +39,13 @@
             /* background-color: aquamarine; */
         }
 
-        .logo{
-            display: block; 
-            margin: auto;
+        .logo {
+            display: block;
+            margin: 20px auto;
+        }
+
+        .inner{
+            height: 450px;
         }
 
         .right-div{
@@ -96,9 +100,15 @@
                 float: none;
                 display: block;
             }
-            .logo{
-            display: none;
-        }
+            .logo {
+                width: 100%;
+                /* display: none; */
+                margin-top: 49px;
+            }
+
+            .inner{
+                height: 330px;
+            }
         }
     </style>
 </head>
@@ -170,40 +180,49 @@
         </div>
     </div>
     <div class="right-div">
-        <div class="col-8 logo">
-            <img src="Images/logo.png" class="mx-auto d-block img-fluid">
+        <div class="col-11 logo">
+            <!-- <img src="logo.png" class="mx-auto d-block img-fluid"> -->
+            <div id="carouselExampleCaptions" class="carousel slide inner" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner " >
+                    <div class="carousel-item active inner">
+                        <img src="Manish-sir.png" class="d-block w-100 h-100" alt="...">
+                    </div>
+                    <div class="carousel-item inner">
+                        <img src="Group 17.png" class="d-block w-100 h-100" alt="...">
+                    </div>
+                    <div class="carousel-item inner">
+                        <img src="Result-1.jpeg" class="d-block w-100 h-100" alt="...">
+                    </div>
+                    <div class="carousel-item inner">
+                        <img src="Result-2.jpeg" class="d-block w-100 h-100" alt="...">
+                    </div>
+                    <div class="carousel-item inner">
+                        <img src="Result-3.jpeg" class="d-block w-100 h-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
         <div class="top-container">
             <div class="top-2">
-                <div class="imgLoader"></div>
-                <div class="container m-0">
-                    <div class="book">
-                        <div class="gap"></div>
-                        <div class="pages">
-                            <div class="page"></div>
-                            <div class="page"></div>
-                            <div class="page"></div>
-                            <div class="page"></div>
-                            <div class="page"></div>
-                            <div class="page"></div>
-                        </div>
-                        <div class="flips">
-                            <div class="flip flip1">
-                                <div class="flip flip2">
-                                    <div class="flip flip3">
-                                        <div class="flip flip4">
-                                            <div class="flip flip5">
-                                                <div class="flip flip6">
-                                                    <div class="flip flip7"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
 
